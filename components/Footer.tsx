@@ -95,7 +95,7 @@ export default function Footer() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
       >
-        © {new Date().getFullYear()} NIOR FITS. All rights reserved.
+        © {new Date().getFullYear()} ESCALIDIZZY. All rights reserved.
       </motion.div>
     </footer>
   );

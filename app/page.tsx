@@ -16,10 +16,6 @@ import Faq from "@/components/Faq";
 import Contact from "@/components/Contact";
 
 
-const montserrat = Montserrat ({
-  variable: "--font-montserrat",
-  weight: ["700"],
-});
 
 
 

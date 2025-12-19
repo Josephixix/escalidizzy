@@ -16,14 +16,14 @@ export default function Footer() {
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <img
-          src="/c300.jpg" // replace with your image path
+          src="/c300.jpg" 
           alt="Footer Background"
           className="w-full h-full object-cover opacity-20"
         />
       </div>
 
       {/* Black gradient overlay */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30" />
+      <div className="absolute inset-0 z-0 bg-linear-to-t from-black/70 via-black/50 to-black/30" />
 
       {/* Background Blobs */}
       <div className="pointer-events-none absolute inset-0 select-none overflow-hidden -z-5">

@@ -78,7 +78,7 @@ export default function Gallery() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
-            className="flex-shrink-0 w-64 h-80 rounded-xl overflow-hidden cursor-pointer snap-start"
+            className="shrink-0 w-64 h-80 rounded-xl overflow-hidden cursor-pointer snap-start"
           >
             <img src={img} alt={`Car ${index + 1}`} className="w-full h-full object-cover" />
           </motion.div>

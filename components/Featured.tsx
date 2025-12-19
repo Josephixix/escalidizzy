@@ -76,7 +76,7 @@ export default function Featured() {
         {cars.map((car) => (
           <div
             key={car.id}
-            className="min-w-[260px] snap-center bg-white rounded-xl shadow-md p-3"
+            className="min-w-65 snap-center bg-white rounded-xl shadow-md p-3"
           >
             <div className="relative w-full h-40 rounded-lg overflow-hidden">
               <Image src={car.img} alt={car.name} fill className="object-cover" />

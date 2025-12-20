@@ -1,12 +1,17 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import {Montserrat} from "next/font/google";
-import { i } from "motion/react-client";
-import { m, motion, AnimatePresence } from "framer-motion";
 
+import Image from "next/image";
+import Link from "next/link";
+import { m, motion } from "framer-motion";
+import { Montserrat } from "next/font/google";
+import { i } from "motion/react-client";
+import { Sofia_Sans } from "next/font/google";
+
+
+const sofia = Sofia_Sans  ({
+  variable: "--font-sofia",
+  weight: ["400"],
+});
 
 
 const montserrat = Montserrat ({
@@ -15,14 +20,12 @@ const montserrat = Montserrat ({
 });
 
 
+
 export default function Contact() {
-
-
   return (
-    <>
-
-      <motion.section
-      className="flex justify-center items-center py-8 px-3 md:px-12 lg:px-24 bg-gray-200  "
+  <>
+  <motion.section
+      className="flex justify-center items-center py-8 px-3 md:px-12 lg:px-24"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -80,7 +83,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 placeholder="Enter your message"
-                className="w-full min-h-screen rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full  rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               ></textarea>
             </div>
@@ -116,6 +119,7 @@ export default function Contact() {
         </div>
       </div>
     </motion.section>
-</>
+    
+  </>
   );
 }

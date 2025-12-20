@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 z-50 w-full bg-white shadow-md px-5 lg:px-24 py-2 flex items-center justify-between">
       {/* Logo */}
       <Link href="/">
-        <div className="flex items-center gap-2 animate-slideIn">
+        <div className="flex items-center gap-2">
           <span className="font-lobsterx text-black text-lg lg:text-xl font-bold">
             ESCALIDIZZY
           </span>
@@ -63,35 +63,32 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="fixed inset-0 bg-white z-50 flex flex-col animate-slideInRight">
+        <div className="fixed inset-0 bg-white z-50 flex flex-col">
           {/* Top */}
           <div className="flex items-center justify-between px-6 py-6 border-b">
             <span className="font-lobsterx text-black text-lg font-bold">
               ESCALIDIZZY
             </span>
-            <button
-              onClick={() => setOpen(false)}
-              className="transition hover:rotate-90"
-            >
+            <button onClick={() => setOpen(false)}>
               <X className="w-7 h-7 text-green-500" />
             </button>
           </div>
 
           {/* Menu Items */}
           <div className="flex flex-col gap-6 px-6 py-8 text-lg font-sofia">
-            <Link href="/services" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay1 opacity-0">
+            <Link href="/services" onClick={() => setOpen(false)} className="flex items-center gap-3">
               <ShoppingCart /> Services
             </Link>
-            <Link href="/contact" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay2 opacity-0">
+            <Link href="/contact" onClick={() => setOpen(false)} className="flex items-center gap-3">
               <Phone /> Contact
             </Link>
-            <Link href="/about" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay3 opacity-0">
+            <Link href="/about" onClick={() => setOpen(false)} className="flex items-center gap-3">
               <Mail /> About Us
             </Link>
-            <Link href="/locator" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay3 opacity-0">
+            <Link href="/locator" onClick={() => setOpen(false)} className="flex items-center gap-3">
               <MapPin /> Store Locator
             </Link>
-            <Link href="/fleet" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay3 opacity-0">
+            <Link href="/fleet" onClick={() => setOpen(false)} className="flex items-center gap-3">
               <Car /> Fleet
             </Link>
           </div>

@@ -47,7 +47,7 @@ Shop smart. Drive happy.
 
                      Find the perfect car for your journey. 
                      Quality vehicles, trusted service, 
-                      enjoy your ride as you cruise in comfort
+                      enjoy your ride, as you cruise in comfort
                       </p>
          
 

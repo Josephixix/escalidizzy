@@ -43,12 +43,12 @@ export default function Hero() {
           
 Shop smart. Drive happy.
           </h2>
-          <p className="mt-4 text-white/90 max-w-xl mx-auto text-sm md:text-lg">   
+          <h3 className="mt-4 text-white/90 max-w-xl mx-auto text-sm md:text-lg">   
 
                      Find the perfect car for your journey. 
                      Quality vehicles, trusted service, 
                       enjoy your ride, as you cruise in comfort
-                      </p>
+                      </h3>
          
 
           <button className={`mt-6 px-6 py-3 bg-black text-white hover:bg-green-500 rounded-lg font-semibold ${montserrat.className} transition`}>

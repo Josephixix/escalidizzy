@@ -1,18 +1,9 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import {Montserrat} from "next/font/google";
-import { i } from "motion/react-client";
-import { m, motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
 
 
-const montserrat = Montserrat ({
-  variable: "--font-montserrat",
-  weight: ["700"],
-});
+
 
 const cars = [
   {
@@ -65,7 +56,7 @@ export default function Featured() {
     >
       {/* Section Header */}
       <div className="mb-6">
-        <h2 className={`text-2xl md:text-3xl font-bold ${montserrat.className}`}>Featured Cars</h2>
+        <h2 className={`text-2xl md:text-3xl font-bold `}>Featured Cars</h2>
         <p className="text-gray-500 mt-2">
           Carefully selected vehicles ready for their next owner.
         </p>

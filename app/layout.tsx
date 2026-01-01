@@ -11,18 +11,7 @@ const lora = Lora({
   display: "swap",
 });
 
-const lobsterX = Orbitron({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-berkshire",
-});
 
-const sofia = Sofia_Sans({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-sofia",
-  display: "swap",
-});
 
 
 const montserrat = Montserrat ({
@@ -52,8 +41,6 @@ export default function RootLayout({
       <body
         className={`
           ${lora.variable}
-          ${lobsterX.variable}
-          ${sofia.variable}
           ${montserrat.variable}
           antialiased
         `}

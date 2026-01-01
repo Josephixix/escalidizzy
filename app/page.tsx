@@ -1,12 +1,5 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import {Montserrat} from "next/font/google";
-import { i } from "motion/react-client";
-import { m, motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Featured from "@/components/Featured";

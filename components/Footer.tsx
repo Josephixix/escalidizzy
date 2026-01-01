@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ChessKnight, Dumbbell, Facebook, Instagram, Twitter } from "lucide-react";
 import { Orbitron } from "next/font/google";
+
 const LobsterX = Orbitron ({
   variable: "--font-berkshire",
   weight: ["400"],

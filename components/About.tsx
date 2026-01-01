@@ -1,18 +1,10 @@
 "use client";
-import { useState } from "react";
+
 import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import {Montserrat} from "next/font/google";
-import { i } from "motion/react-client";
 import { m, motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 
 
-const montserrat = Montserrat ({
-  variable: "--font-montserrat",
-  weight: ["700"],
-});
+
 
 export default function About() {
 
@@ -33,22 +25,21 @@ export default function About() {
   </div>
 
   {/* Main Heading */}
-  <p
+  <h3
     className={
-      "text-2xl md:text-3xl lg:text-5xl mb-3 font-bold tracking-tighter leading-[1.2] text-foreground " +
-      montserrat.className
+      "text-2xl md:text-3xl lg:text-5xl mb-3 font-bold tracking-tighter leading-[1.2] text-foreground "
     }
   >
 Where reliability meets affordability.
-  </p>
+  </h3>
 
   {/* Content */}
   <div className="flex flex-col lg:flex-row items-start justify-between gap-6">
-    <p className={`text-[12px] md:text-sm max-w-3xl md:max-w-xl py-2 text-gray-600 text-left ${montserrat.className }`}>
+    <h4 className={`text-sm font-normal text-gray-500 mb-3 `}>
 We’re dedicated to helping you find a car that fits your lifestyle, your budget, and 
 your journey. With a trusted selection of quality vehicles and a team focused on honesty and
  customer care, we make the buying process simple, transparent, and stress-free. Your next ride starts here.
-    </p>
+    </h4>
   </div>
 
   {/* Image */}

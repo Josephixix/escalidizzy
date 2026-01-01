@@ -1,22 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { m, motion } from "framer-motion";
-import { Montserrat } from "next/font/google";
-import { i } from "motion/react-client";
 import { Sofia_Sans } from "next/font/google";
 
 
 const sofia = Sofia_Sans  ({
   variable: "--font-sofia",
   weight: ["400"],
-});
-
-
-const montserrat = Montserrat ({
-  variable: "--font-montserrat",
-  weight: ["700"],
 });
 
 
@@ -33,7 +23,7 @@ export default function Contact() {
     >
       <div className="w-full max-w-3xl">
         {/* Heading */}
-        <h2 className={`${montserrat.className} mt-4 mb-5 text-2xl md:text-4xl font-bold text-center text-black `}>
+        <h2 className={` mt-4 mb-5 text-2xl md:text-4xl font-bold text-center text-black `}>
           Let's Get in Touch
         </h2>
         <p className="text-center text-gray-600 mb-6">

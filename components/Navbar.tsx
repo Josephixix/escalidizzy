@@ -11,6 +11,17 @@ import {
   MapPin,
   Car,
 } from "lucide-react";
+import { Orbitron , Sofia_Sans } from "next/font/google";
+
+const LobsterX = Orbitron ({
+  variable: "--font-berkshire",
+  weight: ["400"],
+});   
+
+const SofiaSans = Sofia_Sans ({
+  variable: "--font-sofia",
+  weight: ["400"],
+});
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -20,7 +31,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/">
         <div className="flex items-center gap-2">
-          <span className="font-lobsterx text-black text-lg lg:text-xl font-bold">
+          <span className={`${LobsterX.className}   text-black text-lg lg:text-xl font-bold  `}>
             ESCALIDIZZY
           </span>
         </div>
@@ -35,7 +46,7 @@ export default function Navbar() {
       </button>
 
       {/* Desktop Links */}
-      <ul className="hidden lg:flex gap-6 text-lg font-sofia">
+      <ul className={`hidden lg:flex gap-6 text-lg ${SofiaSans.className}`}>
         {[
           { name: "Services", href: "/services" },
           { name: "Contact", href: "/contact" },
@@ -56,7 +67,7 @@ export default function Navbar() {
 
       {/* Desktop CTA */}
       <Link href="/sign-in" className="hidden lg:block">
-        <button className="px-4 py-2 bg-black text-white rounded-md hover:bg-green-500 transition font-sofia">
+        <button className={`px-4 py-2 bg-black text-white rounded-md hover:bg-green-500 transition font-sofia ${SofiaSans.className}`}>
           Rent now
         </button>
       </Link>
@@ -75,7 +86,7 @@ export default function Navbar() {
           </div>
 
           {/* Menu Items */}
-          <div className="flex flex-col gap-6 px-6 py-8 text-lg font-sofia">
+          <div className= {`flex flex-col gap-6 px-6 py-8 text-lg font-sofia ${SofiaSans.className}`}>
             <Link href="/services" onClick={() => setOpen(false)} className="flex items-center gap-3">
               <ShoppingCart /> Services
             </Link>

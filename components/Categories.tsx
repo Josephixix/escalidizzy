@@ -1,21 +1,8 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import {Montserrat} from "next/font/google";
-import { i } from "motion/react-client";
+
 import { m, motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Featured from "@/components/Featured";
 
 
-const montserrat = Montserrat ({
-  variable: "--font-montserrat",
-  weight: ["700"],
-});
 
 
 
@@ -42,7 +29,7 @@ export default function Categories() {
 >
   {/* Section Header */}
   <div className="text-center mb-12">
-    <h2 className={`${montserrat.className} text-2xl md:text-4xl font-bold mb-4`}>
+    <h2 className={`text-2xl md:text-4xl font-bold mb-4`}>
       Shop by Category
     </h2>
     <p className="text-gray-600 text-lg md:text-xl">

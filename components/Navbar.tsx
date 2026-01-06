@@ -57,7 +57,7 @@ export default function Navbar() {
           <li key={item.name}>
             <Link
               href={item.href}
-              className="text-black hover:text-[#7A6453] hover:bg-[#7A6453] px-2 py-1 rounded transition"
+              className="text-black hover:text-[#7A6453]  px-2 py-1 rounded transition"
             >
               {item.name}
             </Link>

@@ -81,7 +81,7 @@ export default function Contact() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2  bg-black hover:bg-green-500 text-white py-2 rounded-md text-sm font-medium hover:opacity-90 transition"
+              className="w-full flex items-center justify-center gap-2  bg-black hover:bg-[#7A6453] text-white py-2 rounded-md text-sm font-medium hover:opacity-90 transition"
             >
               Send
               <svg

@@ -24,7 +24,6 @@ export default function Home() {
 
 <Featured/>
 
-<Categories/>
 
 <Gallery/>
 

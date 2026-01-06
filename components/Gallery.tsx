@@ -20,7 +20,7 @@ export default function Gallery() {
 
   return (
 
-<section className="px-6 md:px-16 lg:px-32 py-10 bg-gray-200 pt-16 pb-0">
+<section className="px-6 md:px-16 lg:px-32 py-10 bg-white pt-16 pb-0">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -29,8 +29,8 @@ export default function Gallery() {
         viewport={{ once: true, amount: 0.3 }}
         className="text-center mb-12"
       >
-        <h2 className="text-2xl md:text-4xl font-bold mb-4">Cars in Action</h2>
-        <p className="text-gray-600 text-sm md:text-lg">
+        <h2 className="text-sm md:text-base font-semibold text-[#7A6453] mb-2 tracking-wide uppercase ">Cars in Action</h2>
+        <p className="text-[#5C4A3F] mt-2">
           See our vehicles in real-life scenarios and imagine your ride.
         </p>
       </motion.div>

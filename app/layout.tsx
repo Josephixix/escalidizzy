@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Lora, Orbitron, Sofia_Sans, Montserrat} from "next/font/google";
+import { DM_Sans} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LenisProvider from "./LenisProvider";
 
-const lora = Lora({
+const dm_sans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-lora",
@@ -14,10 +15,6 @@ const lora = Lora({
 
 
 
-const montserrat = Montserrat ({
-  variable: "--font-montserrat",
-  weight: ["700"],
-});
 
    
 export const metadata: Metadata = {
@@ -40,13 +37,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
-          ${lora.variable}
-          ${montserrat.variable}
+          ${dm_sans.variable}
           antialiased
         `}
       >
         <Navbar />
-        {children}
+        <LenisProvider>{children}</LenisProvider>
         <Footer />
       </body>
     </html>

@@ -40,7 +40,7 @@ export default function Faq() {
   return (
 
 
-     <section className="px-6 md:px-16 lg:px-32 py-16 bg-white">
+     <section className="px-6 md:px-16 lg:px-32 py-16 bg-gray-100">
       <div className="text-center mb-12">
         <h2 className="text-2xl font-bold mb-2">Got Questions? We’ve Got Answers</h2>
         <p className="text-gray-600">Find the info you need before your next ride.</p>
@@ -54,7 +54,7 @@ export default function Faq() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="border rounded-lg bg-green-400 shadow-sm"
+            className=" rounded-lg bg-white "
           >
             <button
               onClick={() => toggle(index)}
@@ -90,7 +90,7 @@ export default function Faq() {
       <div className="text-center mt-8">
         <a
           href="/contact"
-          className="inline-block bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition"
+          className="inline-block bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#7A6453] transition"
         >
           Still have questions? Contact Us
         </a>

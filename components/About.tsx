@@ -1,57 +1,57 @@
+
 "use client";
 
 import Image from "next/image";
-import { m, motion, AnimatePresence } from "framer-motion";
-
-
-
+import { motion } from "motion/react";
 
 export default function About() {
-
-
   return (
-<motion.section
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  viewport={{ once: true, amount: 0.2 }}
-  className="px-3 md:px-12 lg:px-24 py-16 h-auto md:h-auto lg:h-auto mb-0"
->
-  {/* Section Header */}
-  <div>
-    <h2 className="text-lg font-bold mb-4 text-gray-500">
-      About ESCALIDIZZY
-    </h2>
-  </div>
+    <section className="px-6 md:px-16 lg:px-32 py-16 bg-white overflow-hidden">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-  {/* Main Heading */}
-  <h3
-    className={
-      "text-2xl md:text-3xl lg:text-5xl mb-3 font-bold tracking-tighter leading-[1.2] text-foreground "
-    }
-  >
-Where reliability meets affordability.
-  </h3>
+        {/* Text */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="max-w-xl"
+        >
+          <h3 className="text-sm md:text-base font-semibold text-[#7A6453] mb-2 tracking-wide uppercase">
+            About ESCALIDIZZY
+          </h3>
 
-  {/* Content */}
-  <div className="flex flex-col lg:flex-row items-start justify-between gap-6">
-    <h4 className={`text-sm font-normal text-gray-500 mb-3 `}>
-We’re dedicated to helping you find a car that fits your lifestyle, your budget, and 
-your journey. With a trusted selection of quality vehicles and a team focused on honesty and
- customer care, we make the buying process simple, transparent, and stress-free. Your next ride starts here.
-    </h4>
-  </div>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#2F241E] mb-4 leading-tight">
+          Built for the <br />road ahead
+          </h2>
 
-  {/* Image */}
-  <div className="py-6">
-    <Image
-      src="/about.jpg"
-      alt="Fashion Image"
-      width={1200}
-      height={904}
-      className="object-cover object-center rounded-xl shadow-lg h-64 md:h-[65vh] w-full"
-      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1200px"
-    />
-  </div>
-</motion.section>
-  )}
+          <p className="text-[#5C4A3F]">
+          We offer reliable, well-maintained vehicles designed to move you confidently through everyday drives and long journeys — quality you can trust, value you can rely on.
+          </p>
+        </motion.div>
+
+        {/* Visual */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="relative h-[420px] rounded-3xl overflow-hidden shadow-xl"
+        >
+          <Image
+            src="/Amazon.jpg" 
+            alt="Bag Pack craftsmanship"
+            fill
+            className="object-cover"
+          />
+
+          {/* Soft overlay */}
+          <div className="absolute inset-0 bg-black/10" />
+
+          
+        </motion.div>
+
+      </div>
+    </section>
+  );
+}

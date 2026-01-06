@@ -52,12 +52,12 @@ export default function Featured() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="px-4 md:px-12 lg:px-24 py-12 mt-1 bg-gray-200 pt-16"
+      className="px-4 md:px-12 lg:px-24 py-12 mt-1 bg-gray-100 pt-16"
     >
       {/* Section Header */}
       <div className="mb-6">
-        <h2 className={`text-2xl md:text-3xl font-bold `}>Featured Cars</h2>
-        <p className="text-gray-500 mt-2">
+        <h2 className={`text-sm md:text-base font-semibold text-[#7A6453] mb-2 tracking-wide uppercase `}>Featured Cars</h2>
+        <p className="text-[#5C4A3F] mt-2">
           Carefully selected vehicles ready for their next owner.
         </p>
       </div>
@@ -73,15 +73,15 @@ export default function Featured() {
               <Image src={car.img} alt={car.name} fill className="object-cover" />
             </div>
 
-            <h3 className="font-semibold text-lg mt-3">{car.name}</h3>
-            <p className="text-gray-500 text-sm">{car.year} • {car.mileage}</p>
+            <h3 className="font-semibold text-lg mt-3 text-[#2F241E]">{car.name}</h3>
+            <p className="text-[#5C4A3F] text-sm">{car.year} • {car.mileage}</p>
 
-            <p className="font-bold text-primary mt-2">{car.price}</p>
+            <p className="font-bold text-[#2F241E] mt-2">{car.price}</p>
 
             <button className="mt-3 w-full py-2 bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition">
               View Details
             </button>
-          </div>
+          </div>  
         ))}
       </div>
 
@@ -100,12 +100,12 @@ export default function Featured() {
               <Image src={car.img} alt={car.name} fill className="object-cover" />
             </div>
 
-            <h3 className="font-semibold text-lg mt-3">{car.name}</h3>
-            <p className="text-gray-500 text-sm">{car.year} • {car.mileage}</p>
+            <h3 className="font-semibold text-lg mt-3 text-[#2F241E]">{car.name}</h3>
+            <p className="text-[#5C4A3F] text-sm">{car.year} • {car.mileage}</p>
 
-            <p className="font-bold text-primary mt-2">{car.price}</p>
+            <p className="font-bold text-[#2F241E] mt-2">{car.price}</p>
 
-            <button className="mt-3 w-full py-2 bg-black text-white rounded-lg text-sm hover:bg-green-500 transition">
+            <button className="mt-3 w-full py-2 bg-black text-white rounded-lg text-sm hover:bg-[#7A6453] transition">
               View Details
             </button>
           </motion.div>

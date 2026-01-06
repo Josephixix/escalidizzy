@@ -51,7 +51,7 @@ Shop smart. Drive happy.
                       </h3>
          
 
-          <button className={`mt-6 px-6 py-3 bg-black text-white hover:bg-green-500 rounded-lg font-semibold ${montserrat.className} transition`}>
+          <button className={`mt-6 px-6 py-3 bg-black text-white hover:bg-[#7A6453] rounded-lg font-semibold ${montserrat.className} transition`}>
             Rent Now
           </button>
         </div>

@@ -40,7 +40,7 @@ export default function Navbar() {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setOpen(true)}
-        className="lg:hidden p-2 rounded-lg hover:bg-green-500 transition"
+        className="lg:hidden p-2 rounded-lg hover:bg- transition"
       >
         <Menu className="w-7 h-7 text-black" />
       </button>
@@ -57,7 +57,7 @@ export default function Navbar() {
           <li key={item.name}>
             <Link
               href={item.href}
-              className="text-black hover:text-green-500 hover:bg-green-100 px-2 py-1 rounded transition"
+              className="text-black hover:text-[#7A6453] hover:bg-[#7A6453] px-2 py-1 rounded transition"
             >
               {item.name}
             </Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
 
       {/* Desktop CTA */}
       <Link href="/sign-in" className="hidden lg:block">
-        <button className={`px-4 py-2 bg-black text-white rounded-md hover:bg-green-500 transition font-sofia ${SofiaSans.className}`}>
+        <button className={`px-4 py-2 bg-black text-white rounded-md hover:bg-[#7A6453] transition font-sofia ${SofiaSans.className}`}>
           Rent now
         </button>
       </Link>
@@ -81,7 +81,7 @@ export default function Navbar() {
               ESCALIDIZZY
             </span>
             <button onClick={() => setOpen(false)}>
-              <X className="w-7 h-7 text-green-500" />
+              <X className="w-7 h-7 text-[#7A6453]" />
             </button>
           </div>
 
